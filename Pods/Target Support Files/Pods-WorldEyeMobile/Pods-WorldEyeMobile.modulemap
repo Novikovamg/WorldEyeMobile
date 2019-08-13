@@ -1,0 +1,6 @@
+framework module Pods_WorldEyeMobile {
+  umbrella header "Pods-WorldEyeMobile-umbrella.h"
+
+  export *
+  module * { export * }
+}

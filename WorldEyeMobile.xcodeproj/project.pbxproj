@@ -17,6 +17,8 @@
 		2E2B72432302E49E007511F0 /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72422302E49E007511F0 /* AuthorizationCoordinator.swift */; };
 		2E2B72452302E4B6007511F0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72442302E4B6007511F0 /* Coordinator.swift */; };
 		2E2B72472302E4EA007511F0 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72462302E4EA007511F0 /* Assembly.swift */; };
+		5356AAE7D9A1CEDA6B8FF97F /* Pods_WorldEyeMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746D8274AEDD34EEB3338CAD /* Pods_WorldEyeMobile.framework */; };
+		538077316DBA036CA5FC81F0 /* Pods_WorldEyeMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4462D2A1AE402C25D789CE /* Pods_WorldEyeMobileTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		263E989DA5E986135B802026 /* Pods-WorldEyeMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEyeMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-WorldEyeMobileTests/Pods-WorldEyeMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E2B72172302DE1F007511F0 /* WorldEyeMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldEyeMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2B721A2302DE1F007511F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2B721C2302DE1F007511F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,11 @@
 		2E2B72422302E49E007511F0 /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
 		2E2B72442302E4B6007511F0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2E2B72462302E4EA007511F0 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		6F4462D2A1AE402C25D789CE /* Pods_WorldEyeMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldEyeMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		746D8274AEDD34EEB3338CAD /* Pods_WorldEyeMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldEyeMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8537C321BC78F54798AA5AF7 /* Pods-WorldEyeMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEyeMobile.release.xcconfig"; path = "Target Support Files/Pods-WorldEyeMobile/Pods-WorldEyeMobile.release.xcconfig"; sourceTree = "<group>"; };
+		A405B1972CBEF1D91256B9A8 /* Pods-WorldEyeMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEyeMobileTests.release.xcconfig"; path = "Target Support Files/Pods-WorldEyeMobileTests/Pods-WorldEyeMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9FC2B60F763453BD371DBC3 /* Pods-WorldEyeMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEyeMobile.debug.xcconfig"; path = "Target Support Files/Pods-WorldEyeMobile/Pods-WorldEyeMobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5356AAE7D9A1CEDA6B8FF97F /* Pods_WorldEyeMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538077316DBA036CA5FC81F0 /* Pods_WorldEyeMobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +80,8 @@
 				2E2B72192302DE1F007511F0 /* WorldEyeMobile */,
 				2E2B72302302DE22007511F0 /* WorldEyeMobileTests */,
 				2E2B72182302DE1F007511F0 /* Products */,
+				6F88DCB80E174A1549CF8062 /* Pods */,
+				77BCA83E83A96F50C7F54024 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +168,27 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
+		6F88DCB80E174A1549CF8062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC2B60F763453BD371DBC3 /* Pods-WorldEyeMobile.debug.xcconfig */,
+				8537C321BC78F54798AA5AF7 /* Pods-WorldEyeMobile.release.xcconfig */,
+				263E989DA5E986135B802026 /* Pods-WorldEyeMobileTests.debug.xcconfig */,
+				A405B1972CBEF1D91256B9A8 /* Pods-WorldEyeMobileTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77BCA83E83A96F50C7F54024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				746D8274AEDD34EEB3338CAD /* Pods_WorldEyeMobile.framework */,
+				6F4462D2A1AE402C25D789CE /* Pods_WorldEyeMobileTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E2B72362302DE22007511F0 /* Build configuration list for PBXNativeTarget "WorldEyeMobile" */;
 			buildPhases = (
+				8A5512814691A9DED248853D /* [CP] Check Pods Manifest.lock */,
 				2E2B72132302DE1F007511F0 /* Sources */,
 				2E2B72142302DE1F007511F0 /* Frameworks */,
 				2E2B72152302DE1F007511F0 /* Resources */,
+				A6DCEE976E990CCCFB3A6F3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E2B72392302DE22007511F0 /* Build configuration list for PBXNativeTarget "WorldEyeMobileTests" */;
 			buildPhases = (
+				D473A75EF8C0843B410FFA54 /* [CP] Check Pods Manifest.lock */,
 				2E2B72292302DE22007511F0 /* Sources */,
 				2E2B722A2302DE22007511F0 /* Frameworks */,
 				2E2B722B2302DE22007511F0 /* Resources */,
@@ -251,6 +287,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A5512814691A9DED248853D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorldEyeMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6DCEE976E990CCCFB3A6F3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorldEyeMobile/Pods-WorldEyeMobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorldEyeMobile/Pods-WorldEyeMobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorldEyeMobile/Pods-WorldEyeMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D473A75EF8C0843B410FFA54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorldEyeMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E2B72132302DE1F007511F0 /* Sources */ = {
@@ -412,6 +512,7 @@
 		};
 		2E2B72372302DE22007511F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9FC2B60F763453BD371DBC3 /* Pods-WorldEyeMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +533,7 @@
 		};
 		2E2B72382302DE22007511F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8537C321BC78F54798AA5AF7 /* Pods-WorldEyeMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +554,7 @@
 		};
 		2E2B723A2302DE22007511F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263E989DA5E986135B802026 /* Pods-WorldEyeMobileTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +576,7 @@
 		};
 		2E2B723B2302DE22007511F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A405B1972CBEF1D91256B9A8 /* Pods-WorldEyeMobileTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
