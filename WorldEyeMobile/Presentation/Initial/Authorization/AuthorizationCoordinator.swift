@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+final class AuthorizationCoordinator: Coordinator {
+    
+    func start() {
+        
+    }
+}

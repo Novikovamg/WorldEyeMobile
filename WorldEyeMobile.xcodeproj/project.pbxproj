@@ -3,20 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E2B721B2302DE1F007511F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B721A2302DE1F007511F0 /* AppDelegate.swift */; };
-		2E2B721D2302DE1F007511F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B721C2302DE1F007511F0 /* SceneDelegate.swift */; };
-		2E2B721F2302DE1F007511F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B721E2302DE1F007511F0 /* ContentView.swift */; };
 		2E2B72212302DE22007511F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2B72202302DE22007511F0 /* Assets.xcassets */; };
-		2E2B72242302DE22007511F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2B72232302DE22007511F0 /* Preview Assets.xcassets */; };
 		2E2B72272302DE22007511F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2B72252302DE22007511F0 /* LaunchScreen.storyboard */; };
 		2E2B72322302DE22007511F0 /* WorldEyeMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72312302DE22007511F0 /* WorldEyeMobileTests.swift */; };
 		2E2B72432302E49E007511F0 /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72422302E49E007511F0 /* AuthorizationCoordinator.swift */; };
 		2E2B72452302E4B6007511F0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72442302E4B6007511F0 /* Coordinator.swift */; };
 		2E2B72472302E4EA007511F0 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72462302E4EA007511F0 /* Assembly.swift */; };
+		2E2B72492302EB32007511F0 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B72482302EB32007511F0 /* InitialCoordinator.swift */; };
 		5356AAE7D9A1CEDA6B8FF97F /* Pods_WorldEyeMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746D8274AEDD34EEB3338CAD /* Pods_WorldEyeMobile.framework */; };
 		538077316DBA036CA5FC81F0 /* Pods_WorldEyeMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4462D2A1AE402C25D789CE /* Pods_WorldEyeMobileTests.framework */; };
 /* End PBXBuildFile section */
@@ -35,10 +33,7 @@
 		263E989DA5E986135B802026 /* Pods-WorldEyeMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEyeMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-WorldEyeMobileTests/Pods-WorldEyeMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E2B72172302DE1F007511F0 /* WorldEyeMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldEyeMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2B721A2302DE1F007511F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E2B721C2302DE1F007511F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E2B721E2302DE1F007511F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E2B72202302DE22007511F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E2B72232302DE22007511F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2E2B72262302DE22007511F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E2B72282302DE22007511F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E2B722D2302DE22007511F0 /* WorldEyeMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldEyeMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +42,7 @@
 		2E2B72422302E49E007511F0 /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
 		2E2B72442302E4B6007511F0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2E2B72462302E4EA007511F0 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		2E2B72482302EB32007511F0 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
 		6F4462D2A1AE402C25D789CE /* Pods_WorldEyeMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldEyeMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		746D8274AEDD34EEB3338CAD /* Pods_WorldEyeMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldEyeMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8537C321BC78F54798AA5AF7 /* Pods-WorldEyeMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEyeMobile.release.xcconfig"; path = "Target Support Files/Pods-WorldEyeMobile/Pods-WorldEyeMobile.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,14 +100,6 @@
 			path = WorldEyeMobile;
 			sourceTree = "<group>";
 		};
-		2E2B72222302DE22007511F0 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2E2B72232302DE22007511F0 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		2E2B72302302DE22007511F0 /* WorldEyeMobileTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,10 +121,8 @@
 		2E2B723D2302DE78007511F0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				2E2B721C2302DE1F007511F0 /* SceneDelegate.swift */,
 				2E2B72442302E4B6007511F0 /* Coordinator.swift */,
 				2E2B72402302E464007511F0 /* Initial */,
-				2E2B721E2302DE1F007511F0 /* ContentView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -144,7 +130,6 @@
 		2E2B723E2302DEA3007511F0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				2E2B72222302DE22007511F0 /* Preview Content */,
 				2E2B72282302DE22007511F0 /* Info.plist */,
 				2E2B72252302DE22007511F0 /* LaunchScreen.storyboard */,
 				2E2B72202302DE22007511F0 /* Assets.xcassets */,
@@ -156,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				2E2B72412302E489007511F0 /* Authorization */,
+				2E2B72482302EB32007511F0 /* InitialCoordinator.swift */,
 			);
 			path = Initial;
 			sourceTree = "<group>";
@@ -176,7 +162,6 @@
 				263E989DA5E986135B802026 /* Pods-WorldEyeMobileTests.debug.xcconfig */,
 				A405B1972CBEF1D91256B9A8 /* Pods-WorldEyeMobileTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -274,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E2B72272302DE22007511F0 /* LaunchScreen.storyboard in Resources */,
-				2E2B72242302DE22007511F0 /* Preview Assets.xcassets in Resources */,
 				2E2B72212302DE22007511F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,10 +343,9 @@
 			files = (
 				2E2B721B2302DE1F007511F0 /* AppDelegate.swift in Sources */,
 				2E2B72472302E4EA007511F0 /* Assembly.swift in Sources */,
-				2E2B721D2302DE1F007511F0 /* SceneDelegate.swift in Sources */,
+				2E2B72492302EB32007511F0 /* InitialCoordinator.swift in Sources */,
 				2E2B72452302E4B6007511F0 /* Coordinator.swift in Sources */,
 				2E2B72432302E49E007511F0 /* AuthorizationCoordinator.swift in Sources */,
-				2E2B721F2302DE1F007511F0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -500,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -515,18 +498,21 @@
 			baseConfigurationReference = D9FC2B60F763453BD371DBC3 /* Pods-WorldEyeMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "WorldEyeMobile/Resource/Preview\\ Content";
 				DEVELOPMENT_TEAM = E65J535VWL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WorldEyeMobile/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.novotech.WorldEyeMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novtech.worldeye.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -536,18 +522,21 @@
 			baseConfigurationReference = 8537C321BC78F54798AA5AF7 /* Pods-WorldEyeMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "WorldEyeMobile/Resource/Preview\\ Content";
 				DEVELOPMENT_TEAM = E65J535VWL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WorldEyeMobile/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.novotech.WorldEyeMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novtech.worldeye.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

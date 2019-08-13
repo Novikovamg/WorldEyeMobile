@@ -6,4 +6,22 @@
 //  Copyright © 2019 Viktor Novikov. All rights reserved.
 //
 
-import Foundation
+import Swinject
+
+final class AppAssembly {
+    
+    public let assembler: Assembler
+    
+    public func resolve<Protocol>(_ protcol: Protocol.Type) -> Protocol {
+        if let resolved = assembler.resolver.resolve(protcol) {
+            return resolved
+        } else {
+            fatalError("Unresolved type: \(Protocol.self)")
+        }
+    }
+    
+    init() {
+        assembler = Assembler()
+    }
+}
+
