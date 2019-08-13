@@ -10,10 +10,17 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var initialCoordinator: InitialCoordinator!
+    var appAssembly: AppAssembly!
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
+        Appearance().setUp()
+        appAssembly = AppAssembly()
+        initialCoordinator = InitialCoordinator(appAssembly: appAssembly)
+        initialCoordinator.start()
         return true
     }
 }

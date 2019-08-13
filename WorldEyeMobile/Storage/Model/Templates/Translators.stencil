@@ -1,0 +1,124 @@
+{% for protocol in types.protocols.implementing.Entity %}
+{% if protocol.inheritedTypes.first == "Entity" %}
+
+final class {{ protocol.name }}Translator: Translator {
+    func toEntry(withEntity entity: Translator.DAOEntity) -> Translator.DAOEntry {
+        let entity = entity as! {{ protocol.name }}
+        let entry = {{ protocol.name }}Entry()
+
+        entry.id = entity.id
+
+        {% for struct in types.structs where struct.inheritedTypes.first == protocol.name %}
+        {% if forloop.first %}
+        if let {{ struct.name|lowerFirstLetter }} = entity as? {{ struct.name }} {
+            entry.{{ struct.name|lowerFirstLetter }} = {{ struct.name }}Translator().toEntry(withEntity: {{ struct.name|lowerFirstLetter }}) as? {{ struct.name }}Entry
+        {% else %}
+        } else if let {{ struct.name|lowerFirstLetter }} = entity as? {{ struct.name }} {
+            entry.{{ struct.name|lowerFirstLetter }} = {{ struct.name }}Translator().toEntry(withEntity: {{ struct.name|lowerFirstLetter }}) as? {{ struct.name }}Entry
+        {% endif %}
+        {% endfor %}
+        } else {
+            fatalError("Unrecognizing type")
+        }
+
+        return entry
+    }
+    func toEntity(withEntry entry: Translator.DAOEntry) -> Translator.DAOEntity {
+        let entry = entry as! {{ protocol.name }}Entry
+
+        {% for struct in types.structs where struct.inheritedTypes.first == protocol.name %}
+        {% if forloop.first %}
+        if let {{ struct.name|lowerFirstLetter }} = entry.{{ struct.name|lowerFirstLetter }} {
+            return {{ struct.name }}Translator().toEntity(withEntry: {{ struct.name|lowerFirstLetter }}) as! {{ struct.name }}
+        {% else %}
+        } else if let {{ struct.name|lowerFirstLetter }} = entry.{{ struct.name|lowerFirstLetter }} {
+            return {{ struct.name }}Translator().toEntity(withEntry: {{ struct.name|lowerFirstLetter }}) as! {{ struct.name }}
+        {% endif %}
+        {% endfor %}
+        } else {
+            fatalError("Unrecognizing type")
+        }
+    }
+}
+{% endif %}
+{% endfor %}
+
+{% for type in types.structs.implementing.Entity %}
+
+final class {{ type.name }}Translator: Translator {
+
+    func toEntry(withEntity entity: Translator.DAOEntity) -> Translator.DAOEntry {
+        let entity = entity as! {{ type.name }}
+        let entry = {{ type.name }}Entry()
+
+        {% for variable in type.storedVariables %}
+        {% if variable.isArray %}
+        {% if variable.typeName.array.elementType.implements.Entity %}
+        for element in entity.{{variable.name}} {
+            if let entryElement = {{ variable.typeName.array.elementTypeName }}Translator().toEntry(withEntity: element) as? {{ variable.typeName.array.elementTypeName }}Entry {
+                entry.{{variable.name}}.append(entryElement)
+            }
+        }
+        {% else %}
+        entry.{{variable.name}}.append(objectsIn: entity.{{variable.name}})
+        {% endif %}
+        {% else %}
+        {% if variable.type.implements.Entity %}
+        {% if variable.typeName.isOptional %}
+        if let element = entity.{{variable.name}} {
+            entry.{{variable.name}} = {{variable.typeName|replace:"?",""}}Translator().toEntry(withEntity: element) as? {{variable.typeName|replace:"?",""}}Entry
+        }
+        {% else %}
+        entry.{{variable.name}} = {{variable.typeName|replace:"?",""}}Translator().toEntry(withEntity: entity.{{variable.name}}) as? {{variable.typeName|replace:"?",""}}Entry
+        {% endif %}
+        {% elif variable.type.kind == "enum" %}
+        entry.{{variable.name}} = entity.{{variable.name}}.rawValue
+        {% else %}
+        entry.{{variable.name}} = entity.{{variable.name}}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+        return entry
+    }
+
+    func toEntity(withEntry entry: Translator.DAOEntry) -> Translator.DAOEntity {
+        let entry = entry as! {{ type.name }}Entry
+        var entity = {{ type.name }}(
+            {% for variable in type.storedVariables %}
+            {% if variable.defaultValue == nil %}
+            {% if variable.isArray %}
+            {{ variable.name }}: []{% if not forloop.last %},{% endif %}
+            {% elif variable.type.implements.Entity %}
+            {% if variable.typeName.isOptional %}
+            {{ variable.name }}: nil{% if not forloop.last %},{% endif %}
+            {% else %}
+            {{ variable.name }}: {{ variable.typeName|replace:"?","" }}Translator().toEntity(withEntry: entry.{{ variable.name }}!) as! {{ variable.typeName|replace:"?","" }}{% if not forloop.last %},{% endif %}
+            {% endif %}
+            {% elif variable.type.kind == "enum" %}
+            {{variable.name}}: {{variable.typeName}}(rawValue: entry.{{variable.name}})!{% if not forloop.last %},{% endif %}
+            {% else %}
+            {{variable.name}}: entry.{{variable.name}}{% if not forloop.last %},{% endif %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        )
+        {% for variable in type.storedVariables %}
+        {% if variable.isArray %}
+        {% if variable.typeName.array.elementType.implements.Entity %}
+        entity.{{ variable.name }}.append(contentsOf: entry.{{ variable.name }}.map({ {{ variable.typeName.array.elementTypeName }}Translator().toEntity(withEntry: $0) as! {{ variable.typeName.array.elementTypeName }} }))
+        {% else %}
+        entity.{{ variable.name }}.append(contentsOf: entry.{{ variable.name }})
+        {% endif %}
+        {% elif variable.type.implements.Entity and variable.typeName.isOptional %}
+        if let element = entry.{{ variable.name }} {
+            entity.{{ variable.name }} = {{ variable.typeName|replace:"?","" }}Translator().toEntity(withEntry: element) as? {{ variable.typeName|replace:"?","" }}
+        }
+        {% endif %}
+        {% endfor %}
+        return entity
+    }
+}
+
+{% endfor %}
+

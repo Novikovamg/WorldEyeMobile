@@ -1,0 +1,46 @@
+import Foundation
+import RealmSwift
+{% for protocol in types.protocols.implementing.Entity %}
+
+{% if protocol.inheritedTypes.first == "Entity" %}
+final class {{ protocol.name }}Entry: Entry {
+    {% for struct in types.structs where struct.inheritedTypes.first == protocol.name %}
+    @objc dynamic var {{ struct.name|lowerFirstLetter }}: {{ struct.name }}Entry?
+    {% endfor %}
+}
+{% endif %}
+{% endfor %}
+{% for type in types.structs.implementing.Entity %}
+
+final class {{ type.name }}Entry: Entry {
+    {% for variable in type.storedVariables %}
+    {% if variable.name != "id" %}
+    {% if variable.isArray %}
+    {% if variable.typeName.array.elementType.implements.Entity %}
+    var {{variable.name}} = List<{{variable.typeName.array.elementTypeName}}Entry>()
+    {% else %}
+    var {{variable.name}} = List<{{variable.typeName.array.elementTypeName}}>()
+    {% endif %}
+    {% elif variable.type.implements.Entity %}
+    @objc dynamic var {{variable.name}}: {{variable.typeName|replace:"?",""}}Entry?
+    {% elif variable.typeName|contains:"?" %}
+    @objc dynamic var {{variable.name}}: {{variable.typeName}}
+    {% elif variable.type.kind == "enum" %}
+    @objc dynamic var {{variable.name}}: String = ""
+    {% elif variable.typeName.name == "String" %}
+    @objc dynamic var {{variable.name}}: {{variable.typeName}} = ""
+    {% elif variable.typeName.name == "Date" %}
+    @objc dynamic var {{variable.name}}: Date = Date()
+    {% elif variable.typeName.name == "Int" %}
+    @objc dynamic var {{variable.name}}: Int = 0
+    {% elif variable.typeName.name == "Double" %}
+    @objc dynamic var {{variable.name}}: Double = 0.0
+    {% elif variable.typeName.name == "Float" %}
+    @objc dynamic var {{variable.name}}: Float = 0.0
+    {% elif variable.typeName.name == "Bool" %}
+    @objc dynamic var {{variable.name}}: Bool = true
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+}
+{% endfor %}

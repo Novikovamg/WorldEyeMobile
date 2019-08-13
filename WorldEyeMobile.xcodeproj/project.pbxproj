@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E26BFC32302F52600AFB711 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFC12302F52600AFB711 /* InitialViewController.swift */; };
+		2E26BFC42302F52600AFB711 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BFC22302F52600AFB711 /* InitialViewController.xib */; };
+		2E26BFC72302F6F600AFB711 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFC52302F6F600AFB711 /* AuthorizationViewController.swift */; };
+		2E26BFC82302F6F600AFB711 /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BFC62302F6F600AFB711 /* AuthorizationViewController.xib */; };
+		2E26BFCA2302FE1600AFB711 /* Appereance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFC92302FE1600AFB711 /* Appereance.swift */; };
+		2E26BFCC2302FE8700AFB711 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFCB2302FE8700AFB711 /* AuthorizationViewModel.swift */; };
+		2E26BFCF2302FF7B00AFB711 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFCE2302FF7B00AFB711 /* Network.swift */; };
+		2E26BFD32302FFCC00AFB711 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFD22302FFCC00AFB711 /* Service.swift */; };
+		2E26BFD8230301B600AFB711 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFD7230301B600AFB711 /* Response.swift */; };
+		2E26BFDB2303026900AFB711 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFDA2303026900AFB711 /* API.swift */; };
+		2E26BFDE230302F800AFB711 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFDD230302F800AFB711 /* AuthorizationService.swift */; };
+		2E26BFE02303032D00AFB711 /* AuthorizationServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFDF2303032D00AFB711 /* AuthorizationServiceImp.swift */; };
+		2E26BFE22303036B00AFB711 /* RequestAutorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFE12303036B00AFB711 /* RequestAutorization.swift */; };
+		2E26BFE4230303E700AFB711 /* ResponseAuthorized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFE3230303E700AFB711 /* ResponseAuthorized.swift */; };
+		2E26BFE62303044600AFB711 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFE52303044600AFB711 /* ServiceAssembly.swift */; };
+		2E26BFEA23030F4C00AFB711 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFE923030F4C00AFB711 /* DAO.swift */; };
+		2E26BFEC2303104800AFB711 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFEB2303104800AFB711 /* Entry.swift */; };
+		2E26BFEE2303106500AFB711 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFED2303106500AFB711 /* Translator.swift */; };
+		2E26BFF2230310C500AFB711 /* .sourcery.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BFF1230310C500AFB711 /* .sourcery.yml */; };
+		2E26BFF72303113000AFB711 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFF62303113000AFB711 /* Entity.swift */; };
+		2E26BFF92303115200AFB711 /* Entries.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BFF82303115200AFB711 /* Entries.stencil */; };
+		2E26BFFB2303118100AFB711 /* Translators.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BFFA2303118100AFB711 /* Translators.stencil */; };
+		2E26BFFE2303129800AFB711 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFFD2303129800AFB711 /* User.swift */; };
+		2E26C0012303355B00AFB711 /* Translators.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BFFF2303355B00AFB711 /* Translators.generated.swift */; };
+		2E26C0022303355B00AFB711 /* Entries.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C0002303355B00AFB711 /* Entries.generated.swift */; };
+		2E26C00923033B0500AFB711 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C00823033B0500AFB711 /* UserStorage.swift */; };
+		2E26C00B23033B4C00AFB711 /* UserStorageImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C00A23033B4C00AFB711 /* UserStorageImp.swift */; };
+		2E26C00D23033DE600AFB711 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C00C23033DE600AFB711 /* PersistenceError.swift */; };
+		2E26C01023033EA000AFB711 /* PersistenceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C00F23033EA000AFB711 /* PersistenceAssembly.swift */; };
+		2E26C01723033F3D00AFB711 /* CurrentUserPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C01523033F3D00AFB711 /* CurrentUserPersistence.swift */; };
+		2E26C01823033F3D00AFB711 /* CurrentUserPersistenceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C01623033F3D00AFB711 /* CurrentUserPersistenceImp.swift */; };
+		2E26C01A23033FB100AFB711 /* StorageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C01923033FB100AFB711 /* StorageAssembly.swift */; };
+		2E26C01E2303410400AFB711 /* ResponseUserTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C01D2303410400AFB711 /* ResponseUserTranslator.swift */; };
+		2E26C021230343EA00AFB711 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C020230343EA00AFB711 /* RegistrationService.swift */; };
+		2E26C023230344E900AFB711 /* RegistrationServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C022230344E900AFB711 /* RegistrationServiceImp.swift */; };
+		2E26C02B2303482500AFB711 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C0292303482500AFB711 /* RegistrationViewController.swift */; };
+		2E26C02C2303482500AFB711 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E26C02A2303482500AFB711 /* RegistrationViewController.xib */; };
+		2E26C02E2303483900AFB711 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26C02D2303483900AFB711 /* RegistrationViewModel.swift */; };
 		2E2B721B2302DE1F007511F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B721A2302DE1F007511F0 /* AppDelegate.swift */; };
 		2E2B72212302DE22007511F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2B72202302DE22007511F0 /* Assets.xcassets */; };
 		2E2B72272302DE22007511F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2B72252302DE22007511F0 /* LaunchScreen.storyboard */; };
@@ -31,6 +69,44 @@
 
 /* Begin PBXFileReference section */
 		263E989DA5E986135B802026 /* Pods-WorldEyeMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEyeMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-WorldEyeMobileTests/Pods-WorldEyeMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E26BFC12302F52600AFB711 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		2E26BFC22302F52600AFB711 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		2E26BFC52302F6F600AFB711 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		2E26BFC62302F6F600AFB711 /* AuthorizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
+		2E26BFC92302FE1600AFB711 /* Appereance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appereance.swift; sourceTree = "<group>"; };
+		2E26BFCB2302FE8700AFB711 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		2E26BFCE2302FF7B00AFB711 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2E26BFD22302FFCC00AFB711 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = WorldEyeMobile/Network/Service.swift; sourceTree = SOURCE_ROOT; };
+		2E26BFD7230301B600AFB711 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		2E26BFDA2303026900AFB711 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2E26BFDD230302F800AFB711 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		2E26BFDF2303032D00AFB711 /* AuthorizationServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationServiceImp.swift; sourceTree = "<group>"; };
+		2E26BFE12303036B00AFB711 /* RequestAutorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAutorization.swift; sourceTree = "<group>"; };
+		2E26BFE3230303E700AFB711 /* ResponseAuthorized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAuthorized.swift; sourceTree = "<group>"; };
+		2E26BFE52303044600AFB711 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		2E26BFE923030F4C00AFB711 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		2E26BFEB2303104800AFB711 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		2E26BFED2303106500AFB711 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		2E26BFF1230310C500AFB711 /* .sourcery.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .sourcery.yml; sourceTree = "<group>"; };
+		2E26BFF62303113000AFB711 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		2E26BFF82303115200AFB711 /* Entries.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Entries.stencil; sourceTree = "<group>"; };
+		2E26BFFA2303118100AFB711 /* Translators.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Translators.stencil; sourceTree = "<group>"; };
+		2E26BFFD2303129800AFB711 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2E26BFFF2303355B00AFB711 /* Translators.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translators.generated.swift; sourceTree = "<group>"; };
+		2E26C0002303355B00AFB711 /* Entries.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entries.generated.swift; sourceTree = "<group>"; };
+		2E26C00823033B0500AFB711 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		2E26C00A23033B4C00AFB711 /* UserStorageImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorageImp.swift; sourceTree = "<group>"; };
+		2E26C00C23033DE600AFB711 /* PersistenceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
+		2E26C00F23033EA000AFB711 /* PersistenceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceAssembly.swift; sourceTree = "<group>"; };
+		2E26C01523033F3D00AFB711 /* CurrentUserPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserPersistence.swift; sourceTree = "<group>"; };
+		2E26C01623033F3D00AFB711 /* CurrentUserPersistenceImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserPersistenceImp.swift; sourceTree = "<group>"; };
+		2E26C01923033FB100AFB711 /* StorageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAssembly.swift; sourceTree = "<group>"; };
+		2E26C01D2303410400AFB711 /* ResponseUserTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUserTranslator.swift; sourceTree = "<group>"; };
+		2E26C020230343EA00AFB711 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		2E26C022230344E900AFB711 /* RegistrationServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServiceImp.swift; sourceTree = "<group>"; };
+		2E26C0292303482500AFB711 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		2E26C02A2303482500AFB711 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		2E26C02D2303483900AFB711 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		2E2B72172302DE1F007511F0 /* WorldEyeMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldEyeMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2B721A2302DE1F007511F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2B72202302DE22007511F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +146,224 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E26BFCD2302FF3000AFB711 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFCE2302FF7B00AFB711 /* Network.swift */,
+				2E26BFDA2303026900AFB711 /* API.swift */,
+				2E26BFD42303016500AFB711 /* Model */,
+				2E26BFD92303024000AFB711 /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E26BFD42303016500AFB711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFD62303018A00AFB711 /* Request */,
+				2E26BFD52303018A00AFB711 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E26BFD52303018A00AFB711 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFD7230301B600AFB711 /* Response.swift */,
+				2E26BFE3230303E700AFB711 /* ResponseAuthorized.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		2E26BFD62303018A00AFB711 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFE12303036B00AFB711 /* RequestAutorization.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2E26BFD92303024000AFB711 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFD22302FFCC00AFB711 /* Service.swift */,
+				2E26BFE52303044600AFB711 /* ServiceAssembly.swift */,
+				2E26BFDC2303029400AFB711 /* Authorization */,
+				2E26C01F230343D800AFB711 /* Registration */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2E26BFDC2303029400AFB711 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFDD230302F800AFB711 /* AuthorizationService.swift */,
+				2E26BFDF2303032D00AFB711 /* AuthorizationServiceImp.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		2E26BFE723030F2700AFB711 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFE923030F4C00AFB711 /* DAO.swift */,
+				2E26BFEB2303104800AFB711 /* Entry.swift */,
+				2E26BFED2303106500AFB711 /* Translator.swift */,
+				2E26BFEF2303107E00AFB711 /* Model */,
+				2E26BFF02303109800AFB711 /* Storage */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2E26BFE823030F3A00AFB711 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C00C23033DE600AFB711 /* PersistenceError.swift */,
+				2E26C01323033F2600AFB711 /* Translator */,
+				2E26C00E23033E8700AFB711 /* Persistencies */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		2E26BFEF2303107E00AFB711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFF1230310C500AFB711 /* .sourcery.yml */,
+				2E26BFF3230310DB00AFB711 /* Entities */,
+				2E26BFF4230310EF00AFB711 /* Templates */,
+				2E26BFF5230310FF00AFB711 /* Generated */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E26BFF02303109800AFB711 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C01923033FB100AFB711 /* StorageAssembly.swift */,
+				2E26C00723033AF500AFB711 /* User */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2E26BFF3230310DB00AFB711 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFF62303113000AFB711 /* Entity.swift */,
+				2E26BFFD2303129800AFB711 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2E26BFF4230310EF00AFB711 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				2E26BFF82303115200AFB711 /* Entries.stencil */,
+				2E26BFFA2303118100AFB711 /* Translators.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		2E26BFF5230310FF00AFB711 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C0002303355B00AFB711 /* Entries.generated.swift */,
+				2E26BFFF2303355B00AFB711 /* Translators.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		2E26C00723033AF500AFB711 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C00823033B0500AFB711 /* UserStorage.swift */,
+				2E26C00A23033B4C00AFB711 /* UserStorageImp.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2E26C00E23033E8700AFB711 /* Persistencies */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C00F23033EA000AFB711 /* PersistenceAssembly.swift */,
+				2E26C01423033F3D00AFB711 /* CurrentUser */,
+			);
+			path = Persistencies;
+			sourceTree = "<group>";
+		};
+		2E26C01323033F2600AFB711 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C01D2303410400AFB711 /* ResponseUserTranslator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		2E26C01423033F3D00AFB711 /* CurrentUser */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C01523033F3D00AFB711 /* CurrentUserPersistence.swift */,
+				2E26C01623033F3D00AFB711 /* CurrentUserPersistenceImp.swift */,
+			);
+			path = CurrentUser;
+			sourceTree = "<group>";
+		};
+		2E26C01F230343D800AFB711 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C020230343EA00AFB711 /* RegistrationService.swift */,
+				2E26C022230344E900AFB711 /* RegistrationServiceImp.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		2E26C024230347BE00AFB711 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C025230347D000AFB711 /* Module */,
+				2E2B72412302E489007511F0 /* Authorization */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		2E26C025230347D000AFB711 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				2E2B72482302EB32007511F0 /* InitialCoordinator.swift */,
+				2E26BFC12302F52600AFB711 /* InitialViewController.swift */,
+				2E26BFC22302F52600AFB711 /* InitialViewController.xib */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		2E26C026230347EE00AFB711 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				2E2B72422302E49E007511F0 /* AuthorizationCoordinator.swift */,
+				2E26BFCB2302FE8700AFB711 /* AuthorizationViewModel.swift */,
+				2E26BFC52302F6F600AFB711 /* AuthorizationViewController.swift */,
+				2E26BFC62302F6F600AFB711 /* AuthorizationViewController.xib */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		2E26C0272303480A00AFB711 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C0282303481600AFB711 /* Module */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		2E26C0282303481600AFB711 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				2E26C02D2303483900AFB711 /* RegistrationViewModel.swift */,
+				2E26C0292303482500AFB711 /* RegistrationViewController.swift */,
+				2E26C02A2303482500AFB711 /* RegistrationViewController.xib */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		2E2B720E2302DE1F007511F0 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +389,9 @@
 			children = (
 				2E2B723C2302DE3A007511F0 /* Application */,
 				2E2B723D2302DE78007511F0 /* Presentation */,
+				2E26BFE823030F3A00AFB711 /* Persistence */,
+				2E26BFE723030F2700AFB711 /* Storage */,
+				2E26BFCD2302FF3000AFB711 /* Network */,
 				2E2B723E2302DEA3007511F0 /* Resource */,
 			);
 			path = WorldEyeMobile;
@@ -114,6 +411,7 @@
 			children = (
 				2E2B721A2302DE1F007511F0 /* AppDelegate.swift */,
 				2E2B72462302E4EA007511F0 /* Assembly.swift */,
+				2E26BFC92302FE1600AFB711 /* Appereance.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -122,7 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				2E2B72442302E4B6007511F0 /* Coordinator.swift */,
-				2E2B72402302E464007511F0 /* Initial */,
+				2E2B72402302E464007511F0 /* UserStory */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -137,19 +435,19 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		2E2B72402302E464007511F0 /* Initial */ = {
+		2E2B72402302E464007511F0 /* UserStory */ = {
 			isa = PBXGroup;
 			children = (
-				2E2B72412302E489007511F0 /* Authorization */,
-				2E2B72482302EB32007511F0 /* InitialCoordinator.swift */,
+				2E26C024230347BE00AFB711 /* Initial */,
 			);
-			path = Initial;
+			path = UserStory;
 			sourceTree = "<group>";
 		};
 		2E2B72412302E489007511F0 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				2E2B72422302E49E007511F0 /* AuthorizationCoordinator.swift */,
+				2E26C026230347EE00AFB711 /* Module */,
+				2E26C0272303480A00AFB711 /* Registration */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -182,6 +480,7 @@
 			buildConfigurationList = 2E2B72362302DE22007511F0 /* Build configuration list for PBXNativeTarget "WorldEyeMobile" */;
 			buildPhases = (
 				8A5512814691A9DED248853D /* [CP] Check Pods Manifest.lock */,
+				2E26C0032303368100AFB711 /* Generate storage models */,
 				2E2B72132302DE1F007511F0 /* Sources */,
 				2E2B72142302DE1F007511F0 /* Frameworks */,
 				2E2B72152302DE1F007511F0 /* Resources */,
@@ -204,6 +503,7 @@
 				2E2B72292302DE22007511F0 /* Sources */,
 				2E2B722A2302DE22007511F0 /* Frameworks */,
 				2E2B722B2302DE22007511F0 /* Resources */,
+				1EF115C537887EADFAD086E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,8 +558,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E26BFC82302F6F600AFB711 /* AuthorizationViewController.xib in Resources */,
+				2E26C02C2303482500AFB711 /* RegistrationViewController.xib in Resources */,
 				2E2B72272302DE22007511F0 /* LaunchScreen.storyboard in Resources */,
+				2E26BFFB2303118100AFB711 /* Translators.stencil in Resources */,
 				2E2B72212302DE22007511F0 /* Assets.xcassets in Resources */,
+				2E26BFC42302F52600AFB711 /* InitialViewController.xib in Resources */,
+				2E26BFF2230310C500AFB711 /* .sourcery.yml in Resources */,
+				2E26BFF92303115200AFB711 /* Entries.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +579,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1EF115C537887EADFAD086E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorldEyeMobileTests/Pods-WorldEyeMobileTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorldEyeMobileTests/Pods-WorldEyeMobileTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorldEyeMobileTests/Pods-WorldEyeMobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E26C0032303368100AFB711 /* Generate storage models */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate storage models";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/Sourcery/bin/sourcery --config ./WorldEyeMobile/Storage/Model\n";
+		};
 		8A5512814691A9DED248853D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,11 +682,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E26BFEC2303104800AFB711 /* Entry.swift in Sources */,
+				2E26BFCF2302FF7B00AFB711 /* Network.swift in Sources */,
+				2E26BFDE230302F800AFB711 /* AuthorizationService.swift in Sources */,
+				2E26BFCC2302FE8700AFB711 /* AuthorizationViewModel.swift in Sources */,
+				2E26C01723033F3D00AFB711 /* CurrentUserPersistence.swift in Sources */,
+				2E26C01A23033FB100AFB711 /* StorageAssembly.swift in Sources */,
+				2E26BFC72302F6F600AFB711 /* AuthorizationViewController.swift in Sources */,
+				2E26C00923033B0500AFB711 /* UserStorage.swift in Sources */,
+				2E26BFE4230303E700AFB711 /* ResponseAuthorized.swift in Sources */,
+				2E26C0022303355B00AFB711 /* Entries.generated.swift in Sources */,
 				2E2B721B2302DE1F007511F0 /* AppDelegate.swift in Sources */,
+				2E26C01823033F3D00AFB711 /* CurrentUserPersistenceImp.swift in Sources */,
+				2E26BFD8230301B600AFB711 /* Response.swift in Sources */,
+				2E26C0012303355B00AFB711 /* Translators.generated.swift in Sources */,
+				2E26BFE22303036B00AFB711 /* RequestAutorization.swift in Sources */,
+				2E26C023230344E900AFB711 /* RegistrationServiceImp.swift in Sources */,
 				2E2B72472302E4EA007511F0 /* Assembly.swift in Sources */,
 				2E2B72492302EB32007511F0 /* InitialCoordinator.swift in Sources */,
+				2E26BFC32302F52600AFB711 /* InitialViewController.swift in Sources */,
+				2E26C021230343EA00AFB711 /* RegistrationService.swift in Sources */,
+				2E26BFE02303032D00AFB711 /* AuthorizationServiceImp.swift in Sources */,
+				2E26BFEE2303106500AFB711 /* Translator.swift in Sources */,
+				2E26BFDB2303026900AFB711 /* API.swift in Sources */,
+				2E26BFEA23030F4C00AFB711 /* DAO.swift in Sources */,
 				2E2B72452302E4B6007511F0 /* Coordinator.swift in Sources */,
+				2E26C02E2303483900AFB711 /* RegistrationViewModel.swift in Sources */,
+				2E26BFD32302FFCC00AFB711 /* Service.swift in Sources */,
+				2E26BFF72303113000AFB711 /* Entity.swift in Sources */,
 				2E2B72432302E49E007511F0 /* AuthorizationCoordinator.swift in Sources */,
+				2E26C01E2303410400AFB711 /* ResponseUserTranslator.swift in Sources */,
+				2E26BFCA2302FE1600AFB711 /* Appereance.swift in Sources */,
+				2E26C02B2303482500AFB711 /* RegistrationViewController.swift in Sources */,
+				2E26C00B23033B4C00AFB711 /* UserStorageImp.swift in Sources */,
+				2E26BFE62303044600AFB711 /* ServiceAssembly.swift in Sources */,
+				2E26C01023033EA000AFB711 /* PersistenceAssembly.swift in Sources */,
+				2E26C00D23033DE600AFB711 /* PersistenceError.swift in Sources */,
+				2E26BFFE2303129800AFB711 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +918,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 263E989DA5E986135B802026 /* Pods-WorldEyeMobileTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E65J535VWL;
@@ -557,7 +930,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novotech.WorldEyeMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldEyeMobile.app/WorldEyeMobile";
 			};
@@ -567,7 +940,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A405B1972CBEF1D91256B9A8 /* Pods-WorldEyeMobileTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E65J535VWL;
@@ -579,7 +952,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novotech.WorldEyeMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldEyeMobile.app/WorldEyeMobile";
 			};
