@@ -52,7 +52,6 @@ extension Coordinator: CoordinatorDelegate {
 }
 
 extension Coordinator: UINavigationControllerDelegate {
-    
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         guard viewController === topViewController else { return }
         delegate?.finish(flow: self)

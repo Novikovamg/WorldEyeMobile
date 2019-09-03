@@ -39,8 +39,13 @@ final class CurrentUserPersistenceImp: CurrentUserPersistence {
                 let user = ResponseUserTranslator.toEntity(from: response)
                 API.settings.requestToken = user.login
                 self.userStorage.persisteAsCurent(user: user)
+                DispatchQueue.main.async {
+                    onComplete(.success(user))
+                }
             case .failure(_):
-                onComplete(.failure(.serverError))
+                DispatchQueue.main.async {
+                    onComplete(.failure(.serverError))
+                }
             }
         }
     }
@@ -63,10 +68,19 @@ final class CurrentUserPersistenceImp: CurrentUserPersistence {
                 let user = ResponseUserTranslator.toEntity(from: response)
                 API.settings.requestToken = user.login
                 self.userStorage.persisteAsCurent(user: user)
+                DispatchQueue.main.async {
+                    onComplete(.success(user))
+                }
             case .failure(_):
-                onComplete(.failure(.serverError))
+                DispatchQueue.main.async {
+                    onComplete(.failure(.serverError))
+                }
             }
         }
+    }
+    
+    public func logout() {
+        userStorage.logout()
     }
     
     // MARK: Private

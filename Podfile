@@ -8,6 +8,8 @@ target 'WorldEyeMobile' do
   pod 'RxDataSources', '~> 4.0.1'
   pod 'RxRealm', '~> 1.0.0'
   pod 'Sourcery', '~>0.15.0'
+  pod 'GoogleMaps', '~>3.3.0'
+  pod 'GooglePlaces', '~>3.3.0'
 
   target 'WorldEyeMobileTests' do
     inherit! :search_paths
@@ -16,3 +18,4 @@ target 'WorldEyeMobile' do
   end
 
 end
+

@@ -21,7 +21,13 @@ final class AppAssembly {
     }
     
     init() {
-        assembler = Assembler()
+        let coreAssembler = Assembler([StorageAssembly()])
+        let sourceAssembler = Assembler([PersistenceAssembly()], parent: coreAssembler)
+        assembler = Assembler([NotAuthorizedAssembly(),
+                               MapPostAssembly(),
+                               FriendsAssembly()
+                              ],
+                              parent: sourceAssembler)
     }
 }
 

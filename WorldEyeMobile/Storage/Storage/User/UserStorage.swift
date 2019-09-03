@@ -6,7 +6,12 @@
 //  Copyright © 2019 Viktor Novikov. All rights reserved.
 //
 
+import RxSwift
+
 protocol UserStorage {
+    var current: Observable<User> { get }
+    
     func persisteAsCurent(user: User)
     func getCurent() -> User?
+    func logout()
 }

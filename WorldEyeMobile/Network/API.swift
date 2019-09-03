@@ -17,7 +17,8 @@ final class API {
     static var settings: APISettings = APISettings.init()
     
     static var auth: AuthorizationService { return assembler.resolver.resolve(AuthorizationService.self)! }
-    static var registration: RegistrationService { return assembler.resolver.resolve(RegistrationService.self)!}
+    static var registration: RegistrationService { return assembler.resolver.resolve(RegistrationService.self)! }
+    static var post: PostService { return assembler.resolver.resolve(PostService.self)! }
 }
 
 struct APISettings {

@@ -27,6 +27,35 @@ final class CurrentUserTranslator: Translator {
 }
 
 
+final class PostTranslator: Translator {
+
+    func toEntry(withEntity entity: Translator.DAOEntity) -> Translator.DAOEntry {
+        let entity = entity as! Post
+        let entry = PostEntry()
+
+        entry.id = entity.id
+        entry.longitude = entity.longitude
+        entry.latitude = entity.latitude
+        entry.title = entity.title
+        entry.text = entity.text
+
+        return entry
+    }
+
+    func toEntity(withEntry entry: Translator.DAOEntry) -> Translator.DAOEntity {
+        let entry = entry as! PostEntry
+        var entity = Post(
+            id: entry.id,
+            longitude: entry.longitude,
+            latitude: entry.latitude,
+            title: entry.title,
+            text: entry.text
+        )
+        return entity
+    }
+}
+
+
 final class UserTranslator: Translator {
 
     func toEntry(withEntity entity: Translator.DAOEntity) -> Translator.DAOEntry {

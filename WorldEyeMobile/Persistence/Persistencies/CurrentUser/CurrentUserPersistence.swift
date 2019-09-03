@@ -14,4 +14,6 @@ protocol CurrentUserPersistence {
     func login(username: String, password: String, onComplete: @escaping (Result<User, PersistenceError>) -> Void)
     
     func register(login: String, password: String, name: String, email: String, onComplete: @escaping (Result<User, PersistenceError>) -> Void)
+    
+    func logout()
 }
